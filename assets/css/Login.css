@@ -1,0 +1,120 @@
+@font-face {
+    font-family: 'Alata';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local('Alata Regular'), local('Alata-Regular'), url(https://fonts.gstatic.com/s/alata/v2/PbytFmztEwbIofe6.ttf) format('truetype');
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-size: 16px;
+    font-family: 'Alata', sans-serif;
+    background: #A1FFCE;
+    background: linear-gradient(to right, #FAFFD1, #A1FFCE);
+  }
+  .container {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 7rem;
+    padding: 0 2rem;
+  }
+  .container .form-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .container .form-container form {
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: #fff;
+    padding: 2rem 2rem;
+    box-shadow: 5px 5px 5px #A1FFCE;
+  }
+  .container .form-container form a {
+    display: block;
+    margin: 0rem auto 1.3rem auto;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    text-shadow: 4px 4px 4px #000;
+    transition: all 0.4s ease;
+  }
+  .container .form-container form a:hover {
+    color: black;
+    text-shadow: 4px 4px 4px #fff;
+  }
+  .container .form-container form img {
+    width: 30%;
+    margin: 0 auto;
+    display: block;
+    transform: scale(1, 1);
+    transition: all 0.4s ease;
+  }
+  .container .form-container form img:hover {
+    transform: scale(1.09, 1.09);
+  }
+  .container .form-container form .input-group {
+    margin: 2rem 0 3rem 0;
+  }
+  .container .form-container form .input-group input[type="text"],
+  .container .form-container form .input-group input[type="email"],
+  .container .form-container form .input-group input[type="password"] {
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    outline: none;
+    color: #fff;
+    font-size: 1.2rem;
+    line-height: 1rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    transition: all 0.4s ease;
+  }
+  .container .form-container form .input-group input[type="text"]:focus,
+  .container .form-container form .input-group input[type="email"]:focus,
+  .container .form-container form .input-group input[type="password"]:focus {
+    border-bottom: 1px solid #000;
+  }
+  .container .form-container form .input-group label {
+    color: white;
+    text-shadow: 4px 4px 4px #000;
+    text-transform: capitalize;
+    font-size: 1.23rem;
+    margin-bottom: 0.5rem;
+  }
+  .container .form-container form input[type="submit"] {
+    display: block;
+    margin: 0 auto;
+    padding: 1rem 3rem;
+    border: none;
+    text-transform: uppercase;
+    font-weight: 550;
+    font-family: 'Alata', sans-serif;
+    cursor: pointer;
+    transform: scale(1, 1);
+    transition: all 0.4s ease;
+  }
+  .container .form-container form input[type="submit"]:hover {
+    transform: scale(1.06, 1.06);
+    letter-spacing: 0.05em;
+  }
+  .container .img-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .container .img-container img {
+    width: 75%;
+    transform: scale(1, 1);
+    transition: all 0.5s ease;
+  }
+  .container .img-container img:hover {
+    transform: scale(1.1, 1.1);
+  }
+  

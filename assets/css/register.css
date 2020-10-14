@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+}
+body {
+  font-size: 16px;
+  height: 100%;
+  margin-top: 1.4rem;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/bg-register.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.my-6 {
+  margin-top: 4.5rem !important;
+  margin-bottom: 4.5rem !important;
+}
+.container .row .col-12 form {
+  width: 50%;
+}
+.container .row .col-12 form p {
+  color: #fff;
+  font-size: 1rem;
+}
+.container .row .col-12 form .form-group input[type="text"],
+.container .row .col-12 form .form-group input[type="email"],
+.container .row .col-12 form .form-group input[type="password"] {
+  background: none;
+  border: none;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+  outline: none;
+  border-radius: 0 !important;
+  transition: all 0.4s ease;
+  outline: none !important;
+}
+.container .row .col-12 form .form-group input[type="text"]:focus,
+.container .row .col-12 form .form-group input[type="email"]:focus,
+.container .row .col-12 form .form-group input[type="password"]:focus {
+  outline: none !important;
+  border-bottom: 2px solid #000;
+}
+.container .row .col-12 form .form-group .form-check-input {
+  border: transparent;
+}
+/*MEDIA QUERIES*/
+@media all and (max-width: 975px) {
+  .container .row .col-12 form {
+    width: 100%;
+  }
+  .container .row .col-12 form.my-6 {
+    margin-top: 0rem !important;
+    margin-bottom: 0.895rem !important;
+  }
+}
